@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofino Italiana | Fine Italian Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #1a1a1a;
+            --color-secondary: #c9a96e;
+            --color-accent: #8b0000;
+            --color-bg-light: #fafafa;
+            --color-bg-cream: #f8f6f0;
+            --color-bg-dark: #1a1a1a;
+            --color-bg-overlay: rgba(26, 26, 26, 0.85);
+            --color-text-primary: #2c2c2c;
+            --color-text-secondary: #666666;
+            --color-text-light: #ffffff;
+            --font-primary: 'Playfair Display', Georgia, serif;
+            --font-secondary: 'Montserrat', 'Helvetica Neue', sans-serif;
+            --font-accent: 'Cormorant Garamond', Georgia, serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+            --spacing-xxl: 8rem;
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-full: 50%;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: var(--font-secondary); line-height: 1.7; color: var(--color-text-primary); background: var(--color-bg-light); }
+        h1, h2, h3, h4 { font-family: var(--font-primary); font-weight: 600; line-height: 1.2; margin: 0 0 var(--spacing-sm); }
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); }
+        p { margin: 0 0 var(--spacing-sm); }
+        a { color: var(--color-accent); text-decoration: none; }
+        .section-subtitle { font-family: var(--font-accent); font-size: 1.125rem; font-style: italic; color: var(--color-secondary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--spacing-xs); }
+        .section-title { position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 2px; background: var(--color-secondary); }
+        .text-center { text-align: center; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-md); }
+        .section { padding: var(--spacing-xl) 0; }
+        .section-lg { padding: var(--spacing-xxl) 0; }
+
+        /* Header */
+        .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; transition: all var(--transition-normal); }
+        .site-header.scrolled { background: var(--color-bg-dark); box-shadow: var(--shadow-md); }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; padding: var(--spacing-md); }
+        .site-header.scrolled .header-inner { padding: var(--spacing-sm) var(--spacing-md); }
+        .site-logo { font-family: var(--font-primary); font-size: 1.75rem; font-weight: 700; color: var(--color-text-light); text-decoration: none; }
+        .site-logo span { color: var(--color-secondary); }
+        .nav-menu { display: flex; list-style: none; margin: 0; padding: 0; gap: var(--spacing-md); }
+        .nav-menu a { font-size: 0.875rem; font-weight: 500; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.1em; }
+        .nav-menu a:hover { color: var(--color-secondary); }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+        .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--color-text-light); margin: 5px 0; }
+
+        /* Hero */
+        .hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero-background { position: absolute; inset: 0; background: url('https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/042.jpg') center/cover; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6)); }
+        .hero-content { position: relative; z-index: 10; max-width: 800px; padding: var(--spacing-md); }
+        .hero-subtitle { font-family: var(--font-accent); font-size: 1.25rem; font-style: italic; color: var(--color-secondary); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: var(--spacing-sm); }
+        .hero-title { font-size: clamp(3rem, 8vw, 6rem); color: var(--color-text-light); margin-bottom: var(--spacing-md); }
+        .hero-description { font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: var(--spacing-lg); }
+        .hero-buttons { display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap; }
+        .hero-scroll { position: absolute; bottom: var(--spacing-lg); left: 50%; transform: translateX(-50%); }
+        .scroll-indicator { display: flex; flex-direction: column; align-items: center; color: var(--color-text-light); font-size: 0.75rem; text-transform: uppercase; animation: bounce 2s infinite; text-decoration: none; }
+        @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; padding: 1rem 2rem; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; border: 2px solid transparent; cursor: pointer; transition: all var(--transition-normal); text-decoration: none; }
+        .btn-primary { background: var(--color-secondary); color: var(--color-text-primary); border-color: var(--color-secondary); }
+        .btn-primary:hover { background: transparent; color: var(--color-secondary); }
+        .btn-outline { background: transparent; color: var(--color-text-light); border-color: var(--color-text-light); }
+        .btn-outline:hover { background: var(--color-text-light); color: var(--color-text-primary); }
+        .btn-dark { background: var(--color-bg-dark); color: var(--color-text-light); border-color: var(--color-bg-dark); }
+        .btn-dark:hover { background: transparent; color: var(--color-bg-dark); }
+
+        /* About */
+        .about-section { background: var(--color-bg-cream); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; }
+        .about-image { position: relative; height: 500px; border-radius: var(--radius-md); overflow: hidden; background: url('https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/036.jpg') center/cover; }
+        .about-image::before { content: ''; position: absolute; top: var(--spacing-md); left: var(--spacing-md); right: calc(var(--spacing-md) * -1); bottom: calc(var(--spacing-md) * -1); border: 2px solid var(--color-secondary); z-index: -1; }
+        .about-content { padding: var(--spacing-md); }
+        .about-text { font-size: 1.125rem; color: var(--color-text-secondary); margin-bottom: var(--spacing-md); }
+        .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-sm); margin-bottom: var(--spacing-md); }
+        .feature-item { display: flex; align-items: center; gap: var(--spacing-xs); font-size: 0.875rem; color: var(--color-text-secondary); }
+        .feature-item svg { color: var(--color-secondary); }
+
+        /* Menu */
+        .menu-section { text-align: center; }
+        .menu-categories { display: flex; justify-content: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap; }
+        .menu-tab { padding: var(--spacing-xs) var(--spacing-md); font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; background: none; border: none; cursor: pointer; color: var(--color-text-secondary); position: relative; }
+        .menu-tab::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: var(--color-secondary); transition: width var(--transition-normal); }
+        .menu-tab:hover, .menu-tab.active { color: var(--color-text-primary); }
+        .menu-tab.active::after { width: 100%; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-md); margin-bottom: var(--spacing-lg); }
+        .menu-item { text-align: left; padding: var(--spacing-md); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); transition: all var(--transition-normal); }
+        .menu-item:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .menu-item-header { display: flex; justify-content: space-between; margin-bottom: var(--spacing-xs); }
+        .menu-item-name { font-family: var(--font-primary); font-size: 1.125rem; font-weight: 600; }
+        .menu-item-price { font-weight: 600; color: var(--color-secondary); }
+        .menu-item-description { font-size: 0.875rem; color: var(--color-text-secondary); }
+
+        /* Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-xs); }
+        .gallery-item { position: relative; overflow: hidden; aspect-ratio: 1; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item-overlay { position: absolute; inset: 0; background: var(--color-bg-overlay); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-normal); }
+        .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+        .gallery-item-overlay svg { color: var(--color-text-light); width: 32px; height: 32px; }
+
+        /* Testimonials */
+        .testimonials-section { background: var(--color-bg-dark); color: var(--color-text-light); text-align: center; }
+        .testimonials-section .section-subtitle { color: var(--color-secondary); }
+        .testimonials-section .section-title { color: var(--color-text-light); }
+        .testimonial { max-width: 800px; margin: 0 auto; padding: var(--spacing-md); }
+        .testimonial-text { font-family: var(--font-accent); font-size: 1.5rem; font-style: italic; margin-bottom: var(--spacing-md); position: relative; }
+        .testimonial-text::before { content: '"'; font-size: 4rem; color: var(--color-secondary); opacity: 0.5; position: absolute; top: -20px; left: -20px; }
+        .testimonial-author { font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+        .testimonial-rating { color: var(--color-secondary); margin-bottom: var(--spacing-xs); }
+
+        /* CTA */
+        .cta-section { position: relative; padding: var(--spacing-xxl) 0; text-align: center; background: url('https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/037.jpg') center/cover; }
+        .cta-overlay { position: absolute; inset: 0; background: var(--color-bg-overlay); }
+        .cta-content { position: relative; z-index: 10; max-width: 600px; margin: 0 auto; }
+        .cta-section .section-subtitle { color: var(--color-secondary); }
+        .cta-section .section-title { color: var(--color-text-light); }
+        .cta-text { color: rgba(255,255,255,0.9); margin-bottom: var(--spacing-md); }
+
+        /* Contact */
+        .contact-section { background: var(--color-bg-cream); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); }
+        .contact-item { display: flex; gap: var(--spacing-sm); margin-bottom: var(--spacing-md); }
+        .contact-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--color-secondary); color: var(--color-text-primary); border-radius: var(--radius-full); }
+        .contact-details h4 { font-size: 1rem; margin-bottom: var(--spacing-xs); }
+        .contact-details p { color: var(--color-text-secondary); margin: 0; }
+        .hours-list { list-style: none; padding: 0; margin: 0; }
+        .hours-list li { display: flex; justify-content: space-between; padding: var(--spacing-xs) 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+        .contact-map { min-height: 400px; border-radius: var(--radius-md); overflow: hidden; }
+        .contact-map iframe { width: 100%; height: 100%; border: 0; }
+
+        /* Footer */
+        .site-footer { background: var(--color-bg-dark); color: var(--color-text-light); padding: var(--spacing-xl) 0 0; }
+        .footer-main { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--spacing-lg); padding-bottom: var(--spacing-lg); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .footer-logo { font-family: var(--font-primary); font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-sm); }
+        .footer-logo span { color: var(--color-secondary); }
+        .footer-about p { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+        .footer-heading { font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--spacing-sm); }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: var(--spacing-xs); }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+        .footer-links a:hover { color: var(--color-secondary); }
+        .social-links { display: flex; gap: var(--spacing-sm); margin-top: var(--spacing-sm); }
+        .social-links a { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: var(--radius-full); color: var(--color-text-light); }
+        .social-links a:hover { background: var(--color-secondary); color: var(--color-text-primary); }
+        .footer-bottom { display: flex; justify-content: space-between; padding: var(--spacing-md) 0; font-size: 0.8125rem; color: rgba(255,255,255,0.5); }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .nav-menu { display: none; }
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-bottom { flex-direction: column; text-align: center; gap: var(--spacing-sm); }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="site-logo">Porto<span>fino</span></a>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#book" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Now</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Fine Italian Dining</span>
+            <h1 class="hero-title">Portofino</h1>
+            <p class="hero-description">Experience authentic Italian cuisine served with style in the heart of Hanley. Traditional recipes, fresh ingredients, unforgettable moments.</p>
+            <div class="hero-buttons">
+                <a href="#book" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll</span>
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="section section-lg about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal"></div>
+                <div class="about-content reveal">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">A Taste of Italy</h2>
+                    <p class="about-text">Welcome to Portofino, where authentic Italian cuisine meets warm hospitality. Our chefs create wholesome, satisfying meals using traditional recipes passed down through generations.</p>
+                    <p class="about-text">Every dish is prepared with the finest ingredients and served with genuine care in our family-friendly atmosphere.</p>
+                    <div class="about-features">
+                        <div class="feature-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Fresh Ingredients</span></div>
+                        <div class="feature-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Traditional Recipes</span></div>
+                        <div class="feature-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Family Friendly</span></div>
+                        <div class="feature-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Expert Chefs</span></div>
+                    </div>
+                    <a href="#" class="btn btn-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section section-lg menu-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Our Menu</span>
+                <h2 class="section-title">Signature Dishes</h2>
+            </div>
+            <div class="menu-categories" style="margin-top: var(--spacing-lg);">
+                <button class="menu-tab active">Starters</button>
+                <button class="menu-tab">Pasta</button>
+                <button class="menu-tab">Mains</button>
+                <button class="menu-tab">Desserts</button>
+            </div>
+            <div class="menu-grid reveal">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bruschetta Classica</span><span class="menu-item-price">&pound;7.50</span></div><p class="menu-item-description">Toasted ciabatta topped with fresh tomatoes, basil, garlic and extra virgin olive oil</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari Fritti</span><span class="menu-item-price">&pound;9.95</span></div><p class="menu-item-description">Crispy fried squid rings served with aioli and lemon wedge</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Carpaccio di Manzo</span><span class="menu-item-price">&pound;11.50</span></div><p class="menu-item-description">Thinly sliced raw beef with rocket, parmesan shavings and truffle oil</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Arancini</span><span class="menu-item-price">&pound;8.50</span></div><p class="menu-item-description">Golden fried risotto balls filled with mozzarella and peas</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Gamberoni all'Aglio</span><span class="menu-item-price">&pound;12.95</span></div><p class="menu-item-description">King prawns sautéed in garlic butter, white wine and chilli</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Antipasto Misto</span><span class="menu-item-price">&pound;14.95</span></div><p class="menu-item-description">Selection of Italian cured meats, cheeses, olives and vegetables</p></div>
+            </div>
+            <div class="text-center"><a href="#" class="btn btn-dark">View Full Menu</a></div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section section-lg">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-lg);">
+                <span class="section-subtitle">Our Restaurant</span>
+                <h2 class="section-title">Gallery</h2>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/001.jpg" alt="Restaurant"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/002.jpg" alt="Dining"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/005.jpg" alt="Food"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/006.jpg" alt="Interior"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/007.jpg" alt="Dishes"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/008.jpg" alt="Ambiance"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/009.jpg" alt="Cuisine"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+                <div class="gallery-item"><img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/010.jpg" alt="Restaurant"><div class="gallery-item-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-lg testimonials-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+            <div class="testimonial reveal" style="margin-top: var(--spacing-lg);">
+                <div class="testimonial-rating">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <p class="testimonial-text">Absolutely wonderful experience. The food was exceptional, service impeccable, and the atmosphere was perfect for our anniversary dinner. We will definitely be returning!</p>
+                <span class="testimonial-author">John Lakey</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="cta-content reveal">
+            <span class="section-subtitle">Reserve Your Table</span>
+            <h2 class="section-title">Join Us for an Unforgettable Evening</h2>
+            <p class="cta-text">Book your table today and experience the finest Italian cuisine in Hanley.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Book Now</a>
+                <a href="tel:01782209444" class="btn btn-outline">01782 209444</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-lg contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Find Us</h2>
+                    <div class="contact-item" style="margin-top: var(--spacing-lg);">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                        <div class="contact-details"><h4>Address</h4><p>Marsh Street, Hanley<br>Stoke-on-Trent, ST1 1JD</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                        <div class="contact-details"><h4>Phone</h4><p><a href="tel:01782209444" style="color: var(--color-text-secondary);">01782 209444</a></p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                        <div class="contact-details"><h4>Email</h4><p><a href="mailto:info@portofino-hanley.co.uk" style="color: var(--color-text-secondary);">info@portofino-hanley.co.uk</a></p></div>
+                    </div>
+                    <div style="margin-top: var(--spacing-lg);">
+                        <h4>Opening Hours</h4>
+                        <ul class="hours-list">
+                            <li><span>Monday - Thursday</span><span>12:00 - 22:00</span></li>
+                            <li><span>Friday - Saturday</span><span>12:00 - 23:00</span></li>
+                            <li><span>Sunday</span><span>12:00 - 21:00</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-map reveal">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.8!2d-2.1753!3d53.0258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a6831f4d8d0e5%3A0x4b7a92b5d4c0c0e0!2sMarsh%20St%2C%20Hanley%2C%20Stoke-on-Trent!5e0!3m2!1sen!2suk!4v1699999999999!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="footer-logo">Porto<span>fino</span></div>
+                    <p>Experience authentic Italian cuisine in the heart of Hanley. Our family recipes and warm hospitality have been delighting guests since opening our doors.</p>
+                    <div class="social-links">
+                        <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+                    </div>
+                </div>
+                <div><h4 class="footer-heading">Quick Links</h4><ul class="footer-links"><li><a href="#home">Home</a></li><li><a href="#menu">Menus</a></li><li><a href="#book">Reservations</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
+                <div><h4 class="footer-heading">Opening Hours</h4><ul class="footer-links"><li>Mon-Thu: 12:00 - 22:00</li><li>Fri-Sat: 12:00 - 23:00</li><li>Sunday: 12:00 - 21:00</li></ul></div>
+                <div><h4 class="footer-heading">Contact Us</h4><p style="color: rgba(255,255,255,0.7); font-size: 0.875rem;">Marsh Street, Hanley<br>Stoke-on-Trent, ST1 1JD</p><p style="font-size: 0.875rem;"><a href="tel:01782209444" style="color: rgba(255,255,255,0.7);">01782 209444</a></p></div>
+            </div>
+            <div class="footer-bottom"><div>&copy; 2024 Portofino Italiana. All rights reserved.</div><div><a href="#" style="color: rgba(255,255,255,0.5);">Privacy Policy</a></div></div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 100));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.querySelectorAll('.menu-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
