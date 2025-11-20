@@ -35,6 +35,7 @@ get_header();
             <button class="menu-main-tab" data-menu="wine"><?php esc_html_e('Wine & Drinks', 'portofino-modern'); ?></button>
             <button class="menu-main-tab" data-menu="desserts"><?php esc_html_e('Desserts & Coffee', 'portofino-modern'); ?></button>
             <button class="menu-main-tab" data-menu="christmas"><?php esc_html_e('Christmas', 'portofino-modern'); ?></button>
+            <button class="menu-main-tab" data-menu="kids"><?php esc_html_e('Kids', 'portofino-modern'); ?></button>
         </div>
 
         <!-- A LA CARTE MENU -->
@@ -322,6 +323,21 @@ get_header();
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Christmas Pudding</span></div><p class="menu-item-description">Flambéed with brandy sauce</p></div>
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Panettone</span></div><p class="menu-item-description">Italian Christmas cake with mascarpone</p></div>
                 </div>
+            </div>
+        </div>
+
+        <!-- KIDS MENU -->
+        <div class="menu-panel" id="kids-menu" style="display: none;">
+            <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                <h3 style="color: var(--color-secondary);"><?php esc_html_e('All Items', 'portofino-modern'); ?> &pound;7.95</h3>
+                <p style="color: var(--color-text-secondary); font-style: italic;"><?php esc_html_e('For children under 12', 'portofino-modern'); ?></p>
+            </div>
+            <div class="menu-grid reveal">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><?php esc_html_e('Pasta Bolognese', 'portofino-modern'); ?></span></div><p class="menu-item-description"><?php esc_html_e('Spaghetti or Penne with meat sauce', 'portofino-modern'); ?></p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><?php esc_html_e('Pizza', 'portofino-modern'); ?></span></div><p class="menu-item-description"><?php esc_html_e('Cheese and tomato. Choose any three toppings: ham, pineapple, sweetcorn, prawns, salami or pepperoni', 'portofino-modern'); ?></p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><?php esc_html_e('Meatballs & Tomato Sauce', 'portofino-modern'); ?></span></div><p class="menu-item-description"><?php esc_html_e('Served with chips or spaghetti', 'portofino-modern'); ?></p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><?php esc_html_e('Chicken Goujons', 'portofino-modern'); ?></span></div><p class="menu-item-description"><?php esc_html_e('Served with chips', 'portofino-modern'); ?></p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name"><?php esc_html_e('Fish and Chips', 'portofino-modern'); ?></span></div><p class="menu-item-description"><?php esc_html_e('Served with peas', 'portofino-modern'); ?></p></div>
             </div>
         </div>
 
