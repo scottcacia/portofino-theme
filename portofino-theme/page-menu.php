@@ -108,11 +108,14 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chips</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Crispy golden chips</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Bread</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Toasted ciabatta with garlic butter</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Bread with Cheese</span><span class="menu-item-price">&pound;6.95</span></div><p class="menu-item-description">Toasted garlic bread topped with melted mozzarella</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Tomato Bread</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Toasted garlic bread with fresh tomato topping</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic & Tomato Bread</span><span class="menu-item-price">&pound;6.95</span></div><p class="menu-item-description">Toasted garlic bread with fresh tomato topping</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mash Potato</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Creamy mashed potato</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mixed Salad</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Fresh mixed leaves with house dressing</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Rocket & Parmesan Salad</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Fresh rocket with shaved parmesan and balsamic</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Seasonal Vegetables</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Selection of fresh seasonal vegetables</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Olives</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Marinated Italian olives</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Olives</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Marinated Italian olives</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Blue Cheese Sauce</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Creamy blue cheese sauce</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Peppercorn Sauce</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Classic peppercorn sauce</p></div>
             </div>
         </div>
 
@@ -202,54 +205,68 @@ get_header();
 
             <!-- Sparkling -->
             <div class="menu-grid reveal menu-content" id="sparkling">
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prosecco DOC</span><span class="menu-item-price">&pound;24.95</span></div><p class="menu-item-description">Light and refreshing Italian sparkling wine</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prosecco Rosé DOC</span><span class="menu-item-price">&pound;26.95</span></div><p class="menu-item-description">Delicate pink sparkling with red fruit notes</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Moët & Chandon</span><span class="menu-item-price">&pound;65.00</span></div><p class="menu-item-description">Classic French Champagne</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Veuve Clicquot</span><span class="menu-item-price">&pound;75.00</span></div><p class="menu-item-description">Premium French Champagne</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prosecco</span><span class="menu-item-price">&pound;7.95 / &pound;29.95</span></div><p class="menu-item-description">Light and refreshing Italian sparkling (glass/bottle)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prosecco Rosé</span><span class="menu-item-price">&pound;7.95 / &pound;29.95</span></div><p class="menu-item-description">Delicate pink sparkling with red fruit notes (glass/bottle)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Moët & Chandon</span><span class="menu-item-price">&pound;69.95</span></div><p class="menu-item-description">Classic French Champagne</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Veuve Clicquot</span><span class="menu-item-price">&pound;89.95</span></div><p class="menu-item-description">Premium French Champagne</p></div>
             </div>
 
             <!-- White Wine -->
             <div class="menu-grid reveal menu-content" id="white-wine" style="display: none;">
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pinot Grigio</span><span class="menu-item-price">&pound;18.95 / &pound;4.95</span></div><p class="menu-item-description">Crisp and dry Italian white (bottle/glass)</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sauvignon Blanc</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Fresh and zesty with citrus notes</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chardonnay</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Medium-bodied with vanilla hints</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Gavi di Gavi</span><span class="menu-item-price">&pound;28.95</span></div><p class="menu-item-description">Premium Piedmont white, elegant and mineral</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chablis</span><span class="menu-item-price">&pound;32.95</span></div><p class="menu-item-description">Classic French Burgundy, crisp and refined</p></div>
+                <div class="text-center" style="margin-bottom: var(--spacing-sm); color: var(--color-text-secondary); font-size: 0.875rem;">125ml / 175ml / Bottle</div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Trebbiano</span><span class="menu-item-price">&pound;6.10 / &pound;7.65 / &pound;22.95</span></div><p class="menu-item-description">Light, crisp Italian white with citrus notes</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pinot Grigio</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Crisp and dry with apple and pear notes</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sauvignon Blanc</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Fresh and zesty with citrus notes</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chardonnay</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Medium-bodied with vanilla hints</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Gavi di Gavi</span><span class="menu-item-price">&pound;34.95</span></div><p class="menu-item-description">Premium Piedmont white, elegant and mineral</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chablis</span><span class="menu-item-price">&pound;39.95</span></div><p class="menu-item-description">Classic French Burgundy, crisp and refined</p></div>
             </div>
 
             <!-- Red Wine -->
             <div class="menu-grid reveal menu-content" id="red-wine" style="display: none;">
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Montepulciano d'Abruzzo</span><span class="menu-item-price">&pound;18.95 / &pound;4.95</span></div><p class="menu-item-description">Smooth Italian red with cherry notes (bottle/glass)</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Merlot</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Soft and fruity with plum flavours</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chianti Classico</span><span class="menu-item-price">&pound;26.95</span></div><p class="menu-item-description">Traditional Tuscan red, medium-bodied</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amarone della Valpolicella</span><span class="menu-item-price">&pound;55.00</span></div><p class="menu-item-description">Rich and complex Venetian masterpiece</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Barolo</span><span class="menu-item-price">&pound;65.00</span></div><p class="menu-item-description">King of Italian wines, powerful and elegant</p></div>
+                <div class="text-center" style="margin-bottom: var(--spacing-sm); color: var(--color-text-secondary); font-size: 0.875rem;">125ml / 175ml / Bottle</div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Montepulciano d'Abruzzo</span><span class="menu-item-price">&pound;6.10 / &pound;7.65 / &pound;22.95</span></div><p class="menu-item-description">Smooth Italian red with cherry notes</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Merlot</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Soft and fruity with plum flavours</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Shiraz</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Bold and spicy with blackberry notes</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chianti Classico</span><span class="menu-item-price">&pound;29.95</span></div><p class="menu-item-description">Traditional Tuscan red, medium-bodied</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amarone della Valpolicella</span><span class="menu-item-price">&pound;59.95</span></div><p class="menu-item-description">Rich and complex Venetian masterpiece</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Barolo</span><span class="menu-item-price">&pound;69.95</span></div><p class="menu-item-description">King of Italian wines, powerful and elegant</p></div>
             </div>
 
             <!-- Rosé -->
             <div class="menu-grid reveal menu-content" id="rose-wine" style="display: none;">
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pinot Grigio Rosé</span><span class="menu-item-price">&pound;18.95 / &pound;4.95</span></div><p class="menu-item-description">Light and refreshing pink (bottle/glass)</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Whispering Angel</span><span class="menu-item-price">&pound;38.95</span></div><p class="menu-item-description">Premium Provence rosé, pale and elegant</p></div>
+                <div class="text-center" style="margin-bottom: var(--spacing-sm); color: var(--color-text-secondary); font-size: 0.875rem;">125ml / 175ml / Bottle</div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pinot Grigio Rosé</span><span class="menu-item-price">&pound;6.40 / &pound;8.65 / &pound;24.95</span></div><p class="menu-item-description">Light and refreshing pink wine</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Whispering Angel</span><span class="menu-item-price">&pound;44.95</span></div><p class="menu-item-description">Premium Provence rosé, pale and elegant</p></div>
             </div>
 
             <!-- Cocktails -->
             <div class="menu-grid reveal menu-content" id="cocktails" style="display: none;">
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Aperol Spritz</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Aperol, Prosecco, soda water</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Negroni</span><span class="menu-item-price">&pound;9.50</span></div><p class="menu-item-description">Gin, Campari, sweet vermouth</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Espresso Martini</span><span class="menu-item-price">&pound;9.95</span></div><p class="menu-item-description">Vodka, Kahlua, fresh espresso</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bellini</span><span class="menu-item-price">&pound;8.50</span></div><p class="menu-item-description">Prosecco with peach purée</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello Fizz</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Limoncello, Prosecco, fresh lemon</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mojito</span><span class="menu-item-price">&pound;9.50</span></div><p class="menu-item-description">Rum, mint, lime, sugar, soda</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Negroni</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Gin, Campari, sweet vermouth</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Espresso Martini</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Vodka, Kahlua, fresh espresso</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bellini</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Prosecco with peach purée</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello Spritz</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Limoncello, Prosecco, soda</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mojito</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Rum, mint, lime, sugar, soda</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cosmopolitan</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Vodka, Cointreau, lime, cranberry</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pornstar Martini</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Vanilla vodka, Passoa, passionfruit</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Margarita</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Tequila, Cointreau, lime</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Long Island Iced Tea</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Vodka, gin, rum, tequila, Cointreau, cola</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Piña Colada</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Rum, coconut cream, pineapple</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sex on the Beach</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Vodka, peach schnapps, orange, cranberry</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Strawberry Daiquiri</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Rum, strawberry, lime</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Old Fashioned</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Bourbon, sugar, Angostura bitters</p></div>
             </div>
 
             <!-- Beers & Spirits -->
             <div class="menu-grid reveal menu-content" id="beers" style="display: none;">
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Peroni Nastro Azzurro</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Premium Italian lager (330ml)</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Moretti</span><span class="menu-item-price">&pound;4.75</span></div><p class="menu-item-description">Classic Italian beer (330ml)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Moretti</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Classic Italian beer (330ml)</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Peroni 0.0%</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Alcohol-free Italian lager</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Traditional Italian lemon liqueur</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amaretto Disaronno</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Almond-flavoured liqueur</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sambuca</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Anise-flavoured Italian liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Corona</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Mexican lager with lime (330ml)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Traditional Italian lemon liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amaretto</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Almond-flavoured liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sambuca</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Anise-flavoured Italian liqueur</p></div>
             </div>
         </div>
 
@@ -275,13 +292,13 @@ get_header();
 
             <!-- Coffee & Tea -->
             <div class="menu-grid reveal menu-content" id="coffee" style="display: none;">
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Espresso</span><span class="menu-item-price">&pound;2.50</span></div><p class="menu-item-description">Single shot of Italian espresso</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Double Espresso</span><span class="menu-item-price">&pound;3.25</span></div><p class="menu-item-description">Double shot of Italian espresso</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Americano</span><span class="menu-item-price">&pound;2.95</span></div><p class="menu-item-description">Espresso with hot water</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cappuccino</span><span class="menu-item-price">&pound;3.50</span></div><p class="menu-item-description">Espresso with steamed milk foam</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Latte</span><span class="menu-item-price">&pound;3.50</span></div><p class="menu-item-description">Espresso with steamed milk</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Macchiato</span><span class="menu-item-price">&pound;2.75</span></div><p class="menu-item-description">Espresso with a dash of milk</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tea Selection</span><span class="menu-item-price">&pound;2.50</span></div><p class="menu-item-description">English Breakfast, Earl Grey, Green, Peppermint</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Espresso</span><span class="menu-item-price">&pound;2.75</span></div><p class="menu-item-description">Single shot of Italian espresso</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Double Espresso</span><span class="menu-item-price">&pound;3.50</span></div><p class="menu-item-description">Double shot of Italian espresso</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Americano</span><span class="menu-item-price">&pound;3.25</span></div><p class="menu-item-description">Espresso with hot water</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cappuccino</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Espresso with steamed milk foam</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Latte</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Espresso with steamed milk</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Macchiato</span><span class="menu-item-price">&pound;3.25</span></div><p class="menu-item-description">Espresso with a dash of milk</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tea Selection</span><span class="menu-item-price">&pound;2.95</span></div><p class="menu-item-description">English Breakfast, Earl Grey, Green, Peppermint</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Hot Chocolate</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Rich Italian hot chocolate with cream</p></div>
             </div>
 
@@ -311,47 +328,101 @@ get_header();
             <!-- Christmas Lunch -->
             <div class="menu-content" id="christmas-lunch">
                 <div class="text-center" style="margin-bottom: var(--spacing-md);">
-                    <h3 style="color: var(--color-secondary);">2 Courses &pound;21.95 | 3 Courses &pound;26.95</h3>
+                    <h3 style="color: var(--color-secondary);">2 Courses &pound;19.95 | 3 Courses &pound;22.95</h3>
+                    <p style="color: var(--color-text-secondary);">Available Monday - Friday (Lunch Only)</p>
                 </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Starters</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Minestrone Soup</span></div><p class="menu-item-description">Traditional Italian vegetable soup</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bruschetta</span></div><p class="menu-item-description">Toasted ciabatta with tomato, basil and garlic</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari</span></div><p class="menu-item-description">Deep fried squid rings with garlic mayo</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Polpetti Arrabiata</span></div><p class="menu-item-description">Meatballs in spicy tomato sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Insalata Caprese</span></div><p class="menu-item-description">Mozzarella, tomato and basil salad</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Mains</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Stroganoff De Pollo</span></div><p class="menu-item-description">Chicken breast in creamy mushroom sauce with rice</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Arrost Di Tacchino</span></div><p class="menu-item-description">Roast turkey with all the trimmings</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pizza Quattro Formaggi</span></div><p class="menu-item-description">Four cheese pizza</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Linguini Alla Pescatore</span></div><p class="menu-item-description">Seafood linguini in tomato sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lasagne Al Forno</span></div><p class="menu-item-description">Traditional baked lasagne</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cannelloni Fiorentina</span></div><p class="menu-item-description">Pasta tubes filled with spinach and ricotta</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Desserts</h4>
                 <div class="menu-grid reveal">
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Soup of the Day</span></div><p class="menu-item-description">Served with crusty bread</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prawn Cocktail</span></div><p class="menu-item-description">Classic Marie Rose sauce</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Roast Turkey</span></div><p class="menu-item-description">With all the trimmings</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Roast Beef</span></div><p class="menu-item-description">With Yorkshire pudding and gravy</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Christmas Pudding</span></div><p class="menu-item-description">With brandy sauce</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tiramisu</span></div><p class="menu-item-description">Classic Italian dessert</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Panna Cotta</span></div><p class="menu-item-description">Italian cream dessert with berry coulis</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cheesecake</span></div><p class="menu-item-description">Homemade with seasonal topping</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tiramisu</span></div><p class="menu-item-description">Classic Italian coffee dessert</p></div>
                 </div>
             </div>
 
             <!-- Party Menu -->
             <div class="menu-content" id="christmas-party" style="display: none;">
                 <div class="text-center" style="margin-bottom: var(--spacing-md);">
-                    <h3 style="color: var(--color-secondary);">3 Courses &pound;29.95 per person</h3>
-                    <p style="color: var(--color-text-secondary);">Minimum 10 guests | Glass of Prosecco included</p>
+                    <h3 style="color: var(--color-secondary);">3 Courses &pound;36.95 per person</h3>
+                    <p style="color: var(--color-text-secondary);">Minimum 8 guests | Glass of Prosecco on arrival</p>
                 </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Starters</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Minestrone Soup</span></div><p class="menu-item-description">Traditional Italian vegetable soup</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bruschetta</span></div><p class="menu-item-description">Toasted ciabatta with tomato, basil and garlic</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari</span></div><p class="menu-item-description">Deep fried squid rings with garlic mayo</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Polpetti Arrabiata</span></div><p class="menu-item-description">Meatballs in spicy tomato sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Insalata Caprese</span></div><p class="menu-item-description">Mozzarella, tomato and basil salad</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prawn Cocktail</span></div><p class="menu-item-description">Classic with Marie Rose sauce</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Mains</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Arrost Di Tacchino</span></div><p class="menu-item-description">Roast turkey with all the trimmings</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pollo Milanese</span></div><p class="menu-item-description">Breaded chicken breast with spaghetti napoli</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Salmone Alla Griglia</span></div><p class="menu-item-description">Grilled salmon with vegetables</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lasagne Al Forno</span></div><p class="menu-item-description">Traditional baked lasagne</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo</span></div><p class="menu-item-description">8oz sirloin steak with peppercorn sauce (+&pound;3.95)</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pizza Margherita</span></div><p class="menu-item-description">Classic tomato and mozzarella pizza</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Desserts</h4>
                 <div class="menu-grid reveal">
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Antipasto Platter</span></div><p class="menu-item-description">Selection of Italian meats and cheeses to share</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari Fritti</span></div><p class="menu-item-description">Crispy fried squid with aioli</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Roast Turkey</span></div><p class="menu-item-description">With stuffing and all the trimmings</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sirloin Steak</span></div><p class="menu-item-description">8oz with peppercorn sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Panna Cotta</span></div><p class="menu-item-description">Italian cream dessert with berry coulis</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cheesecake</span></div><p class="menu-item-description">Homemade with seasonal topping</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tiramisu</span></div><p class="menu-item-description">Classic Italian coffee dessert</p></div>
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Christmas Pudding</span></div><p class="menu-item-description">Traditional with brandy sauce</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chocolate Fondant</span></div><p class="menu-item-description">Warm with vanilla ice cream</p></div>
                 </div>
             </div>
 
             <!-- Christmas Day -->
             <div class="menu-content" id="christmas-day" style="display: none;">
                 <div class="text-center" style="margin-bottom: var(--spacing-md);">
-                    <h3 style="color: var(--color-secondary);">4 Courses &pound;69.95 per person</h3>
-                    <p style="color: var(--color-text-secondary);">Including glass of Prosecco on arrival</p>
+                    <h3 style="color: var(--color-secondary);">5 Courses &pound;74.95 per person</h3>
+                    <p style="color: var(--color-text-secondary);">Children under 12: &pound;39.95 | Includes glass of Prosecco on arrival</p>
                 </div>
-                <div class="menu-grid reveal">
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amuse Bouche</span></div><p class="menu-item-description">Chef's festive surprise</p></div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Canapes</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Selection of Canapes</span></div><p class="menu-item-description">Served on arrival with your Prosecco</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Starters</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lobster Bisque</span></div><p class="menu-item-description">Rich and creamy with brandy cream</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Roast Turkey</span></div><p class="menu-item-description">Free-range with all the trimmings</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Beef Wellington</span></div><p class="menu-item-description">Fillet of beef in puff pastry</p></div>
-                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Christmas Pudding</span></div><p class="menu-item-description">Flambéed with brandy sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Smoked Salmon</span></div><p class="menu-item-description">With capers, lemon and horseradish cream</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Prawn Cocktail</span></div><p class="menu-item-description">Classic with Marie Rose sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Duck Liver Parfait</span></div><p class="menu-item-description">With red onion marmalade and toasted brioche</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Sorbet</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lemon Sorbet</span></div><p class="menu-item-description">A refreshing palate cleanser</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Mains</h4>
+                <div class="menu-grid reveal" style="margin-bottom: var(--spacing-md);">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Arrost Di Tacchino</span></div><p class="menu-item-description">Roast turkey with all the trimmings</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Filetto Di Manzo</span></div><p class="menu-item-description">8oz fillet steak with peppercorn sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Salmone Alla Griglia</span></div><p class="menu-item-description">Grilled salmon with vegetables</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lobster Thermidor</span></div><p class="menu-item-description">Half lobster with creamy cheese sauce</p></div>
+                </div>
+                <h4 style="color: var(--color-secondary); margin-bottom: var(--spacing-sm);">Desserts</h4>
+                <div class="menu-grid reveal">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Christmas Pudding</span></div><p class="menu-item-description">Traditional with brandy sauce</p></div>
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Panettone</span></div><p class="menu-item-description">Italian Christmas cake with mascarpone</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cheesecake</span></div><p class="menu-item-description">Homemade with seasonal topping</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Selection of Ice Creams</span></div><p class="menu-item-description">Ask your server for today's flavours</p></div>
                 </div>
             </div>
         </div>
