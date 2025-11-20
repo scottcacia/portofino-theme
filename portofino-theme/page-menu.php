@@ -45,6 +45,7 @@ get_header();
                 <button class="menu-tab" data-category="pizza"><?php esc_html_e('Pizza', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="pasta"><?php esc_html_e('Pasta', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="mains"><?php esc_html_e('Mains', 'portofino-modern'); ?></button>
+                <button class="menu-tab" data-category="sides"><?php esc_html_e('Sides', 'portofino-modern'); ?></button>
             </div>
 
             <!-- Starters -->
@@ -101,6 +102,18 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo</span><span class="menu-item-price">&pound;25.95</span></div><p class="menu-item-description">8oz sirloin steak with your choice of sauce</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pepper Steak</span><span class="menu-item-price">&pound;25.95</span></div><p class="menu-item-description">8oz sirloin steak with peppercorn sauce</p></div>
             </div>
+
+            <!-- Sides -->
+            <div class="menu-grid reveal menu-content" id="sides" style="display: none;">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chips</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Crispy golden chips</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Bread</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Toasted ciabatta with garlic butter</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Bread with Cheese</span><span class="menu-item-price">&pound;6.95</span></div><p class="menu-item-description">Toasted garlic bread topped with melted mozzarella</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Tomato Bread</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Toasted garlic bread with fresh tomato topping</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mixed Salad</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Fresh mixed leaves with house dressing</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Rocket & Parmesan Salad</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Fresh rocket with shaved parmesan and balsamic</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Seasonal Vegetables</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Selection of fresh seasonal vegetables</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Olives</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Marinated Italian olives</p></div>
+            </div>
         </div>
 
         <!-- LUNCH MENU -->
@@ -155,7 +168,6 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Funghi Ripieni (V)</span></div><p class="menu-item-description">Mushrooms filled with garlic, parmesan, parsley and breadcrumbs, baked with creamy cheese and tomato sauce</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Polpetti Arrabiata</span></div><p class="menu-item-description">Homemade beef meatballs in chilli tomato sauce, topped with rocket and parmesan shavings</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari Fritti</span></div><p class="menu-item-description">Fresh squid deep-fried served with continental salad and garlic mayo dip</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo (G)</span><span class="menu-item-price">+&pound;3.95</span></div><p class="menu-item-description">Strips of sirloin steak, pan-fried with Mediterranean vegetables, finished with balsamic glaze</p></div>
             </div>
 
             <!-- Pre Theatre Mains -->
@@ -165,6 +177,7 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Fusilli Verdure Alla Griglia (V)</span></div><p class="menu-item-description">Fusilli pasta with olive oil, garlic butter, char grilled Mediterranean vegetables, rocket and parmesan</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Linguini Pescatore</span></div><p class="menu-item-description">Linguini pasta with selection of seafood, olive oil, garlic, chilli and white wine garlic butter</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pizza Con Rucola</span></div><p class="menu-item-description">Cheese and tomato pizza finished with rocket and shaved parmesan</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo (G)</span><span class="menu-item-price">+&pound;3.95</span></div><p class="menu-item-description">Strips of sirloin steak, pan-fried with Mediterranean vegetables, finished with balsamic glaze</p></div>
             </div>
 
             <!-- Pre Theatre Sides -->
@@ -182,6 +195,7 @@ get_header();
                 <button class="menu-tab active" data-category="sparkling"><?php esc_html_e('Sparkling', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="white-wine"><?php esc_html_e('White Wine', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="red-wine"><?php esc_html_e('Red Wine', 'portofino-modern'); ?></button>
+                <button class="menu-tab" data-category="rose-wine"><?php esc_html_e('Rosé', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="cocktails"><?php esc_html_e('Cocktails', 'portofino-modern'); ?></button>
                 <button class="menu-tab" data-category="beers"><?php esc_html_e('Beers & Spirits', 'portofino-modern'); ?></button>
             </div>
@@ -200,6 +214,7 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sauvignon Blanc</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Fresh and zesty with citrus notes</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chardonnay</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Medium-bodied with vanilla hints</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Gavi di Gavi</span><span class="menu-item-price">&pound;28.95</span></div><p class="menu-item-description">Premium Piedmont white, elegant and mineral</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chablis</span><span class="menu-item-price">&pound;32.95</span></div><p class="menu-item-description">Classic French Burgundy, crisp and refined</p></div>
             </div>
 
             <!-- Red Wine -->
@@ -207,7 +222,14 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Montepulciano d'Abruzzo</span><span class="menu-item-price">&pound;18.95 / &pound;4.95</span></div><p class="menu-item-description">Smooth Italian red with cherry notes (bottle/glass)</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Merlot</span><span class="menu-item-price">&pound;19.95 / &pound;5.25</span></div><p class="menu-item-description">Soft and fruity with plum flavours</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chianti Classico</span><span class="menu-item-price">&pound;26.95</span></div><p class="menu-item-description">Traditional Tuscan red, medium-bodied</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amarone della Valpolicella</span><span class="menu-item-price">&pound;55.00</span></div><p class="menu-item-description">Rich and complex Venetian masterpiece</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Barolo</span><span class="menu-item-price">&pound;65.00</span></div><p class="menu-item-description">King of Italian wines, powerful and elegant</p></div>
+            </div>
+
+            <!-- Rosé -->
+            <div class="menu-grid reveal menu-content" id="rose-wine" style="display: none;">
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pinot Grigio Rosé</span><span class="menu-item-price">&pound;18.95 / &pound;4.95</span></div><p class="menu-item-description">Light and refreshing pink (bottle/glass)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Whispering Angel</span><span class="menu-item-price">&pound;38.95</span></div><p class="menu-item-description">Premium Provence rosé, pale and elegant</p></div>
             </div>
 
             <!-- Cocktails -->
@@ -216,6 +238,7 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Negroni</span><span class="menu-item-price">&pound;9.50</span></div><p class="menu-item-description">Gin, Campari, sweet vermouth</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Espresso Martini</span><span class="menu-item-price">&pound;9.95</span></div><p class="menu-item-description">Vodka, Kahlua, fresh espresso</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bellini</span><span class="menu-item-price">&pound;8.50</span></div><p class="menu-item-description">Prosecco with peach purée</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello Fizz</span><span class="menu-item-price">&pound;8.95</span></div><p class="menu-item-description">Limoncello, Prosecco, fresh lemon</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mojito</span><span class="menu-item-price">&pound;9.50</span></div><p class="menu-item-description">Rum, mint, lime, sugar, soda</p></div>
             </div>
 
@@ -223,8 +246,10 @@ get_header();
             <div class="menu-grid reveal menu-content" id="beers" style="display: none;">
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Peroni Nastro Azzurro</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Premium Italian lager (330ml)</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Moretti</span><span class="menu-item-price">&pound;4.75</span></div><p class="menu-item-description">Classic Italian beer (330ml)</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Peroni 0.0%</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Alcohol-free Italian lager</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Traditional Italian lemon liqueur</p></div>
-                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amaretto</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Almond-flavoured liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amaretto Disaronno</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Almond-flavoured liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sambuca</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Anise-flavoured Italian liqueur</p></div>
             </div>
         </div>
 
@@ -244,6 +269,7 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tartufo Al Limoncello</span><span class="menu-item-price">&pound;8.25</span></div><p class="menu-item-description">Lemon ice cream truffle with limoncello</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Affogato</span><span class="menu-item-price">&pound;8.25</span></div><p class="menu-item-description">Vanilla ice cream drowned in espresso</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Profiterole</span><span class="menu-item-price">&pound;7.15</span></div><p class="menu-item-description">Choux pastry balls with chocolate sauce</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Panna Cotta</span><span class="menu-item-price">&pound;6.95</span></div><p class="menu-item-description">Italian cream dessert with berry compote</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Ice Cream</span><span class="menu-item-price">&pound;2.35 / &pound;5.50</span></div><p class="menu-item-description">Selection of Italian gelato (1 or 3 scoops)</p></div>
             </div>
 
@@ -254,7 +280,9 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Americano</span><span class="menu-item-price">&pound;2.95</span></div><p class="menu-item-description">Espresso with hot water</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cappuccino</span><span class="menu-item-price">&pound;3.50</span></div><p class="menu-item-description">Espresso with steamed milk foam</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Latte</span><span class="menu-item-price">&pound;3.50</span></div><p class="menu-item-description">Espresso with steamed milk</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Macchiato</span><span class="menu-item-price">&pound;2.75</span></div><p class="menu-item-description">Espresso with a dash of milk</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Tea Selection</span><span class="menu-item-price">&pound;2.50</span></div><p class="menu-item-description">English Breakfast, Earl Grey, Green, Peppermint</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Hot Chocolate</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Rich Italian hot chocolate with cream</p></div>
             </div>
 
             <!-- Liqueurs -->
@@ -262,7 +290,9 @@ get_header();
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Limoncello</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Traditional Italian lemon liqueur</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Amaretto</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Almond-flavoured liqueur</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Sambuca</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Anise-flavoured Italian liqueur</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Frangelico</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Hazelnut liqueur</p></div>
                 <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Grappa</span><span class="menu-item-price">&pound;5.50</span></div><p class="menu-item-description">Italian grape-based brandy</p></div>
+                <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Baileys</span><span class="menu-item-price">&pound;4.50</span></div><p class="menu-item-description">Irish cream liqueur</p></div>
             </div>
         </div>
 
