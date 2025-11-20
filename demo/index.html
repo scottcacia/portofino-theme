@@ -252,6 +252,8 @@
             <!-- Main Menu Selector -->
             <div class="menu-selector" style="display: flex; justify-content: center; gap: var(--spacing-sm); margin: var(--spacing-lg) 0; flex-wrap: wrap;">
                 <button class="menu-main-tab active" data-menu="alacarte" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: var(--color-secondary); color: var(--color-text-primary); border: 2px solid var(--color-secondary); cursor: pointer; transition: all var(--transition-normal);">A La Carte</button>
+                <button class="menu-main-tab" data-menu="lunch" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: transparent; color: var(--color-text-secondary); border: 2px solid var(--color-text-secondary); cursor: pointer; transition: all var(--transition-normal);">Lunch</button>
+                <button class="menu-main-tab" data-menu="pretheatre" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: transparent; color: var(--color-text-secondary); border: 2px solid var(--color-text-secondary); cursor: pointer; transition: all var(--transition-normal);">Pre Theatre</button>
                 <button class="menu-main-tab" data-menu="wine" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: transparent; color: var(--color-text-secondary); border: 2px solid var(--color-text-secondary); cursor: pointer; transition: all var(--transition-normal);">Wine & Drinks</button>
                 <button class="menu-main-tab" data-menu="desserts" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: transparent; color: var(--color-text-secondary); border: 2px solid var(--color-text-secondary); cursor: pointer; transition: all var(--transition-normal);">Desserts & Coffee</button>
                 <button class="menu-main-tab" data-menu="christmas" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; background: transparent; color: var(--color-text-secondary); border: 2px solid var(--color-text-secondary); cursor: pointer; transition: all var(--transition-normal);">Christmas</button>
@@ -325,6 +327,79 @@
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Piccanta</span><span class="menu-item-price">&pound;24.95</span></div><p class="menu-item-description">Sirloin steak in spicy tomato and caper sauce</p></div>
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo</span><span class="menu-item-price">&pound;25.95</span></div><p class="menu-item-description">8oz sirloin steak with your choice of sauce</p></div>
                     <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pepper Steak</span><span class="menu-item-price">&pound;25.95</span></div><p class="menu-item-description">8oz sirloin steak with peppercorn sauce</p></div>
+                </div>
+            </div>
+
+            <!-- LUNCH MENU -->
+            <div class="menu-panel" id="lunch-menu" style="display: none;">
+                <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                    <h3 style="color: var(--color-secondary);">2 Course Set Meal - &pound;13.95</h3>
+                    <p style="color: var(--color-text-secondary); font-style: italic;">Add any dessert for &pound;4.95</p>
+                </div>
+
+                <div class="menu-categories" style="display: flex; justify-content: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
+                    <button class="menu-tab active" data-category="lunch-starters">Starters</button>
+                    <button class="menu-tab" data-category="lunch-mains">Mains</button>
+                </div>
+
+                <!-- Lunch Starters -->
+                <div class="menu-grid reveal menu-content" id="lunch-starters">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Soup of the Day</span></div><p class="menu-item-description">Soup of the day served with a basket of bread</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bruschetta (V)</span></div><p class="menu-item-description">Fresh tomatoes and onions marinated in olive oil and basil served on toasted homemade bread</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Funghi Ripieni (V)</span></div><p class="menu-item-description">Mushrooms filled with garlic, parmesan, parsley and breadcrumbs, baked with creamy cheese and tomato sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Polpetti Arrabiata</span></div><p class="menu-item-description">Homemade beef meatballs in chilli tomato sauce, topped with rocket and parmesan shavings</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Smoked Salmon Salad</span></div><p class="menu-item-description">Smoked salmon with rocket and lemon, finished with extra-virgin olive oil and balsamic</p></div>
+                </div>
+
+                <!-- Lunch Mains -->
+                <div class="menu-grid reveal menu-content" id="lunch-mains" style="display: none;">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Fish of the Day</span><span class="menu-item-price">+&pound;2.95</span></div><p class="menu-item-description">Ask a member of staff for the daily fish special</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pollo Al Pepe</span></div><p class="menu-item-description">Chicken breast char grilled with peppercorn sauce, served with broccoli and mashed potato</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Fusilli Verdure Alla Griglia (V)</span></div><p class="menu-item-description">Fusilli pasta with olive oil, garlic butter, char grilled Mediterranean vegetables and parmesan</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Cannelloni Fiorentina (V)</span></div><p class="menu-item-description">Fresh cannelloni filled with ricotta, spinach and nutmeg, oven baked in tomato and mozzarella sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Lasagne Al Forno</span></div><p class="menu-item-description">Layers of pasta with meat, tomato and mozzarella cheese sauce, oven baked</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pizza Margherita (V)</span></div><p class="menu-item-description">Cheese, tomato and oregano</p></div>
+                </div>
+            </div>
+
+            <!-- PRE THEATRE MENU -->
+            <div class="menu-panel" id="pretheatre-menu" style="display: none;">
+                <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                    <h3 style="color: var(--color-secondary);">2 Course Set Meal - &pound;20.95</h3>
+                    <p style="color: var(--color-text-secondary); font-style: italic;">Perfect before the theatre</p>
+                </div>
+
+                <div class="menu-categories" style="display: flex; justify-content: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); flex-wrap: wrap;">
+                    <button class="menu-tab active" data-category="pretheatre-starters">Starters</button>
+                    <button class="menu-tab" data-category="pretheatre-mains">Mains</button>
+                    <button class="menu-tab" data-category="pretheatre-sides">Sides</button>
+                </div>
+
+                <!-- Pre Theatre Starters -->
+                <div class="menu-grid reveal menu-content" id="pretheatre-starters">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bruschetta (V)</span></div><p class="menu-item-description">Fresh tomatoes and onions marinated in olive oil and basil served on toasted homemade bread</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Insalata Caprese (V) (G)</span></div><p class="menu-item-description">Slices of tomato, buffalo mozzarella and fresh basil, dressed with olive oil and balsamic glaze</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Funghi Ripieni (V)</span></div><p class="menu-item-description">Mushrooms filled with garlic, parmesan, parsley and breadcrumbs, baked with creamy cheese and tomato sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Polpetti Arrabiata</span></div><p class="menu-item-description">Homemade beef meatballs in chilli tomato sauce, topped with rocket and parmesan shavings</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Calamari Fritti</span></div><p class="menu-item-description">Fresh squid deep-fried served with continental salad and garlic mayo dip</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Bistecca Di Manzo (G)</span><span class="menu-item-price">+&pound;3.95</span></div><p class="menu-item-description">Strips of sirloin steak, pan-fried with Mediterranean vegetables, finished with balsamic glaze</p></div>
+                </div>
+
+                <!-- Pre Theatre Mains -->
+                <div class="menu-grid reveal menu-content" id="pretheatre-mains" style="display: none;">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pollo Milanese</span></div><p class="menu-item-description">Tender chicken breast, breaded and pan-fried with garlic butter, served with spaghetti in cream sauce</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Spaghetti Carbonara</span></div><p class="menu-item-description">Spaghetti cooked with ham, egg, cheese and cream</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Fusilli Verdure Alla Griglia (V)</span></div><p class="menu-item-description">Fusilli pasta with olive oil, garlic butter, char grilled Mediterranean vegetables, rocket and parmesan</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Linguini Pescatore</span></div><p class="menu-item-description">Linguini pasta with selection of seafood, olive oil, garlic, chilli and white wine garlic butter</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Pizza Con Rucola</span></div><p class="menu-item-description">Cheese and tomato pizza finished with rocket and shaved parmesan</p></div>
+                </div>
+
+                <!-- Pre Theatre Sides -->
+                <div class="menu-grid reveal menu-content" id="pretheatre-sides" style="display: none;">
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Chips</span><span class="menu-item-price">&pound;3.95</span></div><p class="menu-item-description">Crispy golden chips</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Mixed Salad</span><span class="menu-item-price">&pound;4.95</span></div><p class="menu-item-description">Fresh mixed leaves with house dressing</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Bread with Cheese</span><span class="menu-item-price">&pound;6.95</span></div><p class="menu-item-description">Toasted garlic bread topped with melted mozzarella</p></div>
+                    <div class="menu-item"><div class="menu-item-header"><span class="menu-item-name">Garlic Tomato Bread</span><span class="menu-item-price">&pound;5.95</span></div><p class="menu-item-description">Toasted garlic bread with fresh tomato topping</p></div>
                 </div>
             </div>
 
@@ -544,15 +619,93 @@
         </div>
     </section>
 
-    <section id="book" class="cta-section">
-        <div class="cta-overlay"></div>
-        <div class="cta-content reveal">
-            <span class="section-subtitle">Reserve Your Table</span>
-            <h2 class="section-title">Join Us for an Unforgettable Evening</h2>
-            <p class="cta-text">Book your table today and experience the finest Italian cuisine in Hanley.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Book Now</a>
-                <a href="tel:01782209444" class="btn btn-outline">01782 209444</a>
+    <section id="book" class="section section-lg" style="background: var(--color-bg-cream);">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: var(--spacing-lg);">
+                <span class="section-subtitle">Reserve Your Table</span>
+                <h2 class="section-title">Book Your Experience</h2>
+                <p style="max-width: 600px; margin: var(--spacing-md) auto 0; color: var(--color-text-secondary);">
+                    Complete the form below to request a reservation. We will contact you to confirm your booking.
+                </p>
+            </div>
+
+            <form id="reservation-form" class="reveal" style="max-width: 800px; margin: 0 auto; background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div class="form-group">
+                        <label for="res-name" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Full Name *</label>
+                        <input type="text" id="res-name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit;">
+                    </div>
+                    <div class="form-group">
+                        <label for="res-email" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Email Address *</label>
+                        <input type="email" id="res-email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit;">
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div class="form-group">
+                        <label for="res-phone" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Phone Number *</label>
+                        <input type="tel" id="res-phone" name="phone" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit;">
+                    </div>
+                    <div class="form-group">
+                        <label for="res-guests" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Number of Guests *</label>
+                        <select id="res-guests" name="guests" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit; background: white;">
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="9">9 Guests</option>
+                            <option value="10">10 Guests</option>
+                            <option value="10+">10+ Guests (Large Party)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <div class="form-group">
+                        <label for="res-date" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Preferred Date *</label>
+                        <input type="date" id="res-date" name="date" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit;">
+                    </div>
+                    <div class="form-group">
+                        <label for="res-time" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Preferred Time *</label>
+                        <select id="res-time" name="time" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit; background: white;">
+                            <option value="">Select Time</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="12:30">12:30 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="13:30">1:30 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: var(--spacing-md);">
+                    <label for="res-message" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500; font-size: 0.875rem;">Special Requests</label>
+                    <textarea id="res-message" name="message" rows="4" placeholder="Dietary requirements, special occasions, seating preferences..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: inherit; resize: vertical;"></textarea>
+                </div>
+
+                <div class="text-center" style="margin-top: var(--spacing-md);">
+                    <button type="submit" class="btn btn-primary">Request Reservation</button>
+                </div>
+
+                <div id="reservation-message" style="margin-top: var(--spacing-md); text-align: center;"></div>
+            </form>
+
+            <div class="text-center" style="margin-top: var(--spacing-lg);">
+                <p style="color: var(--color-text-secondary);">For immediate reservations or large parties, please call us directly:</p>
+                <a href="tel:01782209444" class="btn btn-dark" style="margin-top: var(--spacing-sm);">01782 209444</a>
             </div>
         </div>
     </section>
@@ -689,6 +842,37 @@
                 }
             });
         });
+
+        // Set minimum date for reservation form
+        const dateInput = document.getElementById('res-date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.min = today;
+        }
+
+        // Handle reservation form submission
+        const reservationForm = document.getElementById('reservation-form');
+        if (reservationForm) {
+            reservationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const messageDiv = document.getElementById('reservation-message');
+                const formData = new FormData(this);
+
+                // Show success message (in production this would send to server)
+                messageDiv.innerHTML = '<p style="color: #28a745; font-weight: 600;">Thank you for your reservation request! We will contact you shortly to confirm your booking.</p>';
+
+                // Reset form after submission
+                setTimeout(() => {
+                    this.reset();
+                    // Reset the date min value
+                    if (dateInput) {
+                        const today = new Date().toISOString().split('T')[0];
+                        dateInput.min = today;
+                    }
+                }, 3000);
+            });
+        }
     </script>
 </body>
 </html>

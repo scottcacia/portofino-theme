@@ -258,6 +258,40 @@ function portofino_customize_register($wp_customize) {
         'section'  => 'portofino_hero',
         'type'     => 'textarea',
     ));
+
+    // Booking Section
+    $wp_customize->add_section('portofino_booking', array(
+        'title'    => esc_html__('Booking Settings', 'portofino-modern'),
+        'priority' => 45,
+    ));
+
+    // Booking Plugin Shortcode
+    $wp_customize->add_setting('portofino_booking_shortcode', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+        'transport'         => 'refresh',
+    ));
+
+    $wp_customize->add_control('portofino_booking_shortcode', array(
+        'label'       => esc_html__('Booking Plugin Shortcode', 'portofino-modern'),
+        'description' => esc_html__('Enter your booking plugin shortcode (e.g., [rtb-booking-form] or [flavor-flavor-form]). Leave empty to use the built-in form.', 'portofino-modern'),
+        'section'     => 'portofino_booking',
+        'type'        => 'textarea',
+    ));
+
+    // OpenTable Restaurant ID
+    $wp_customize->add_setting('portofino_opentable_id', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+        'transport'         => 'refresh',
+    ));
+
+    $wp_customize->add_control('portofino_opentable_id', array(
+        'label'       => esc_html__('OpenTable Restaurant ID', 'portofino-modern'),
+        'description' => esc_html__('Enter your OpenTable restaurant ID for the booking widget.', 'portofino-modern'),
+        'section'     => 'portofino_booking',
+        'type'        => 'text',
+    ));
 }
 add_action('customize_register', 'portofino_customize_register');
 

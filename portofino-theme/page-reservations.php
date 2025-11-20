@@ -30,6 +30,28 @@ get_header();
             </p>
         </div>
 
+        <?php
+        // Check for booking plugin shortcodes
+        $booking_shortcode = get_theme_mod('portofino_booking_shortcode', '');
+
+        if (!empty($booking_shortcode)) {
+            // Use configured booking plugin (e.g., Restaurant Reservations, Five Star Restaurant Reservations, etc.)
+            echo '<div class="booking-plugin-container reveal">';
+            echo do_shortcode($booking_shortcode);
+            echo '</div>';
+        } elseif (shortcode_exists('rtb-booking-form')) {
+            // Restaurant Reservations plugin
+            echo '<div class="booking-plugin-container reveal">';
+            echo do_shortcode('[rtb-booking-form]');
+            echo '</div>';
+        } elseif (shortcode_exists('flavor-flavor-form')) {
+            // Five Star Restaurant Reservations
+            echo '<div class="booking-plugin-container reveal">';
+            echo do_shortcode('[flavor-flavor-form]');
+            echo '</div>';
+        } else {
+            // Fall back to built-in form
+        ?>
         <form id="reservation-form" class="reservation-form reveal">
             <div class="form-row">
                 <div class="form-group">
@@ -100,6 +122,7 @@ get_header();
 
             <div id="reservation-message" style="margin-top: var(--spacing-md); text-align: center;"></div>
         </form>
+        <?php } // End of booking form conditional ?>
 
         <div class="text-center" style="margin-top: var(--spacing-lg);">
             <p style="color: var(--color-text-secondary);">
