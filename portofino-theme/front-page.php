@@ -22,7 +22,7 @@ $hero_desc = get_theme_mod('portofino_hero_desc', 'Experience authentic Italian 
 
     <div class="hero-content">
         <span class="hero-subtitle"><?php echo esc_html($hero_subtitle); ?></span>
-        <h1 class="hero-title"><span class="green">Por</span><span class="white">tof</span><span class="red">ino</span></h1>
+        <h1 class="hero-title"><span class="italia-green">Por</span><span class="italia-white">tof</span><span class="italia-red">ino</span></h1>
         <p class="hero-description"><?php echo esc_html($hero_desc); ?></p>
 
         <div class="hero-buttons">

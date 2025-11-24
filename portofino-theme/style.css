@@ -219,16 +219,16 @@ a:hover {
     letter-spacing: 0.05em;
 }
 
-.site-logo .green {
-    color: #009246;
+.site-logo .italia-green {
+    color: #009246 !important;
 }
 
-.site-logo .white {
-    color: #ffffff;
+.site-logo .italia-white {
+    color: #ffffff !important;
 }
 
-.site-logo .red {
-    color: #ce2b37;
+.site-logo .italia-red {
+    color: #ce2b37 !important;
 }
 
 /* Main Navigation */
@@ -375,16 +375,16 @@ a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-title .green {
-    color: #009246;
+.hero-title .italia-green {
+    color: #009246 !important;
 }
 
-.hero-title .white {
-    color: #ffffff;
+.hero-title .italia-white {
+    color: #ffffff !important;
 }
 
-.hero-title .red {
-    color: #ce2b37;
+.hero-title .italia-red {
+    color: #ce2b37 !important;
 }
 
 .hero-description {
@@ -926,16 +926,16 @@ a:hover {
     margin-bottom: var(--spacing-sm);
 }
 
-.footer-logo .green {
-    color: #009246;
+.footer-logo .italia-green {
+    color: #009246 !important;
 }
 
-.footer-logo .white {
-    color: #ffffff;
+.footer-logo .italia-white {
+    color: #ffffff !important;
 }
 
-.footer-logo .red {
-    color: #ce2b37;
+.footer-logo .italia-red {
+    color: #ce2b37 !important;
 }
 
 .footer-about p {
