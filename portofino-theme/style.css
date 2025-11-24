@@ -216,12 +216,19 @@ a:hover {
     font-family: var(--font-primary);
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-text-light);
     letter-spacing: 0.05em;
 }
 
-.site-logo span {
-    color: var(--color-secondary);
+.site-logo .green {
+    color: #009246;
+}
+
+.site-logo .white {
+    color: #ffffff;
+}
+
+.site-logo .red {
+    color: #ce2b37;
 }
 
 /* Main Navigation */
@@ -905,12 +912,19 @@ a:hover {
     font-family: var(--font-primary);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-text-light);
     margin-bottom: var(--spacing-sm);
 }
 
-.footer-logo span {
-    color: var(--color-secondary);
+.footer-logo .green {
+    color: #009246;
+}
+
+.footer-logo .white {
+    color: #ffffff;
+}
+
+.footer-logo .red {
+    color: #ce2b37;
 }
 
 .footer-about p {
