@@ -371,9 +371,20 @@ a:hover {
 
 .hero-title {
     font-size: clamp(3rem, 8vw, 6rem);
-    color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title .green {
+    color: #009246;
+}
+
+.hero-title .white {
+    color: #ffffff;
+}
+
+.hero-title .red {
+    color: #ce2b37;
 }
 
 .hero-description {
