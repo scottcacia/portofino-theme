@@ -22,7 +22,7 @@
                         <?php the_custom_logo(); ?>
                     <?php else : ?>
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo" rel="home">
-                            <span class="green">Por</span><span class="white">to</span><span class="red">fino</span>
+                            <span class="green">Por</span><span class="white">tof</span><span class="red">ino</span>
                         </a>
                     <?php endif; ?>
                 </div>

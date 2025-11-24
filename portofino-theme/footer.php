@@ -5,7 +5,7 @@
             <div class="footer-main">
                 <!-- About Column -->
                 <div class="footer-about">
-                    <div class="footer-logo"><span class="green">Por</span><span class="white">to</span><span class="red">fino</span></div>
+                    <div class="footer-logo"><span class="green">Por</span><span class="white">tof</span><span class="red">ino</span></div>
                     <p><?php esc_html_e('Experience authentic Italian cuisine in the heart of Hanley. Our family recipes and warm hospitality have been delighting guests since opening our doors.', 'portofino-modern'); ?></p>
                     <?php echo portofino_social_links(); ?>
                 </div>
