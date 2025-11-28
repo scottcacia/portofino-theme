@@ -50,7 +50,7 @@ $hero_desc = get_theme_mod('portofino_hero_desc', 'Experience authentic Italian 
     <div class="container">
         <div class="about-grid">
             <div class="about-image reveal">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/images/about-placeholder.jpg'); ?>" alt="<?php esc_attr_e('Portofino Restaurant Interior', 'portofino-modern'); ?>">
+                <img src="https://www.portofino-hanley.co.uk/wp-content/uploads/photo-gallery/imported_from_media_libray/007.jpg" alt="<?php esc_attr_e('Portofino Italian Food', 'portofino-modern'); ?>">
             </div>
 
             <div class="about-content reveal">
